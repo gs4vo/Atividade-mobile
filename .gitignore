@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Android
+**/android/local.properties
+**/android/.gradle/
+**/android/**/build/
+
+# iOS / macOS
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/macos/Flutter/ephemeral/
+
+# Generated
+**/*.g.dart
