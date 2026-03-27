@@ -1,0 +1,29 @@
+class Product {
+  final int id;
+  final String title;
+  final double price;
+  final String description;
+  final String image;
+  bool favorite;
+
+  Product({
+    required this.id,
+    required this.title,
+    required this.price,
+    required this.description,
+    required this.image,
+    this.favorite = false,
+  });
+
+  String get name => title;
+
+  factory Product.fromJson(Map<String, dynamic> json) {
+    return Product(
+      id: json['id'] as int,
+      title: json['title'] as String,
+      price: (json['price'] as num).toDouble(),
+      description: json['description'] as String,
+      image: json['image'] as String,
+    );
+  }
+}
